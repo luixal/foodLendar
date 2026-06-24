@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#76904A" />
+    <meta name="description" content="Weekly meal menu" />
+    <title>foodLendar</title>
+
+    <link rel="icon" type="image/png" href="/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="page-header">
+        <h1 class="logo"><span class="logo-mark" aria-hidden="true">🍽️</span> foodLendar</h1>
+        <p class="week-label" id="week-label">Loading menu…</p>
+      </header>
+
+      <main id="menu-grid" class="menu-grid" aria-live="polite"></main>
+    </div>
+
+    <!-- Ingredients modal -->
+    <div id="ingredients-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div id="modal-overlay" class="modal-overlay"></div>
+      <div class="modal-card">
+        <div class="modal-header">
+          <div>
+            <span id="modal-meal" class="modal-meal-label"></span>
+            <h2 id="modal-title" class="modal-title"></h2>
+          </div>
+          <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+        </div>
+        <ul id="modal-list" class="modal-list"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

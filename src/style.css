@@ -1,0 +1,521 @@
+:root {
+  --bg-page: #efece6;
+  --card-bg: #ffffff;
+  --card-bg-today: #f5f7ec;
+
+  --ink-strong: #20241b;
+  --ink-body: #3c4133;
+  --ink-muted: #93988a;
+  --ink-error: #b5482e;
+
+  --line: #e8e5dc;
+
+  --accent: #76904a;
+  --accent-dark: #57692f;
+  --accent-soft: #e3ead0;
+
+  --font-base: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 18px 38px -22px rgba(32, 36, 27, 0.30);
+  --shadow-today: 0 24px 48px -20px rgba(87, 105, 47, 0.40);
+
+  /*
+    Fixed card height:
+    - header (day name): ~60px
+    - 3 meal rows × (chip 28px + 2-line text ~44px + padding 20px) = 3 × 92px = 276px
+    - card padding top + bottom: 48px
+    Total ≈ 384px → round up to 390px for comfort
+  */
+  --card-height: 390px;
+  --card-height-today: 430px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg-page);
+  color: var(--ink-body);
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+#app {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 4rem;
+}
+
+/* ---------- Header ---------- */
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 0.85rem;
+  color: var(--ink-strong);
+}
+
+.logo-mark {
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+.week-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 1rem;
+}
+
+/* ============================================================
+   DESKTOP GRID (≥ 601 px) — 5 equal columns, fixed height
+   ============================================================ */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Base card — fixed height, overflow hidden */
+.day-card {
+  background: var(--card-bg);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 1.4rem 1.25rem;
+  height: var(--card-height);
+  overflow: hidden;             /* clips text that doesn't fit */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Today — taller, auto overflow, olive border, stronger shadow */
+.day-card.is-today {
+  background: var(--card-bg-today);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-today);
+  padding: 1.85rem 1.5rem;
+  height: var(--card-height-today);
+  overflow: visible;            /* never truncate today */
+  transform: scale(1.045);
+  transform-origin: top center;
+  position: relative;
+  z-index: 1;
+}
+
+.day-card.is-today:hover {
+  transform: scale(1.045) translateY(-2px);
+}
+
+/* ---------- Card head ---------- */
+
+.day-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+  flex-shrink: 0;
+}
+
+.day-name {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--ink-strong);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.is-today .day-name {
+  font-size: 1.45rem;
+}
+
+.today-badge {
+  flex-shrink: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius-pill);
+  padding: 0.32rem 0.65rem;
+}
+
+/* ---------- Meal rows ---------- */
+
+.meal-row {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;               /* rows don't compress, card clips instead */
+}
+
+.meal-row:first-of-type { padding-top: 0; }
+.meal-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+.meal-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem 0.65rem 0.2rem 0.2rem;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.meal-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.meal-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Text: max 2 lines, truncate with ellipsis on regular cards */
+.meal-text {
+  margin: 0;
+  font-size: 0.93rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink-strong);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Today's card: never truncate */
+.is-today .meal-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* ---------- States ---------- */
+
+.state-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--ink-muted);
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+}
+
+.state-message.is-error { color: var(--ink-error); }
+
+/* ---------- Footer ---------- */
+
+.page-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+}
+
+.page-footer code {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.78rem;
+}
+
+/* ============================================================
+   MOBILE CAROUSEL (≤ 600 px)
+   ============================================================ */
+
+@media (max-width: 600px) {
+  #app {
+    padding: 2rem 0 3rem;
+    max-width: 100%;
+    min-height: 100dvh;
+  }
+
+  .page-header { padding: 0 1.25rem; }
+
+  /* Footer hidden on mobile */
+  .page-footer { display: none; }
+
+  /* Horizontal snap-scroll carousel.
+     Extra padding on top/bottom so box-shadows are never clipped. */
+  .menu-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+    overflow-x: auto;
+    overflow-y: visible;        /* let shadows breathe vertically */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* Horizontal padding = side gutter; vertical padding = shadow room */
+    padding: 1rem 1.25rem 1.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: start;
+  }
+
+  .menu-grid::-webkit-scrollbar { display: none; }
+
+  /* Cards: fixed height, same as desktop */
+  .day-card {
+    flex: 0 0 82vw;
+    max-width: 340px;
+    height: var(--card-height);
+    overflow: hidden;
+    scroll-snap-align: center;
+    transform: none !important;
+    padding: 1.5rem 1.35rem;
+  }
+
+  /* Today: slightly taller, no truncation */
+  .day-card.is-today {
+    height: var(--card-height-today);
+    overflow: visible;
+    transform: none !important;
+    padding: 1.5rem 1.35rem;
+  }
+
+  .day-card.is-today:hover,
+  .day-card.is-today { transform: none !important; }
+
+  .is-today .day-name { font-size: 1.25rem; }
+}
+
+/* ---------- Accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .day-card { transition: none; }
+  .menu-grid { scroll-behavior: auto; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   MEAL ROW — clickable state
+   ============================================================ */
+
+.meal-row-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meal-row.is-clickable {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  margin: 0 -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: background 0.15s ease;
+}
+
+.meal-row.is-clickable:hover,
+.meal-row.is-clickable:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+/* ============================================================
+   INGREDIENTS MODAL
+   ============================================================ */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  align-items: flex-end;   /* sheet slides from bottom on mobile */
+  justify-content: center;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(32, 36, 27, 0.45);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  animation: fade-in 0.2s ease;
+}
+
+.modal-card {
+  position: relative;
+  z-index: 1;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  width: 100%;
+  max-width: 480px;
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.75rem 2.5rem;
+  animation: slide-up 0.25s ease;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.modal-meal-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.3rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--ink-strong);
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.modal-close {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-page);
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.modal-close:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.modal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+  /* Smooth scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-ingredient:last-child {
+  border-bottom: none;
+}
+
+.ingredient-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink-strong);
+}
+
+.ingredient-qty {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem 0.6rem;
+}
+
+/* Desktop: centered dialog instead of bottom sheet */
+@media (min-width: 601px) {
+  .modal {
+    align-items: center;
+  }
+
+  .modal-card {
+    border-radius: var(--radius-lg);
+    max-height: 70vh;
+    animation: scale-in 0.2s ease;
+  }
+}
+
+/* ── Animations ── */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-overlay, .modal-card { animation: none; }
+}

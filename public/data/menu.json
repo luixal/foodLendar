@@ -1,0 +1,181 @@
+{
+  "week": "Week of June 22–26, 2026",
+  "days": [
+    {
+      "day": "Monday",
+      "meals": {
+        "breakfast": {
+          "name": "Toast with tomato and olive oil",
+          "ingredients": [
+            { "name": "Sourdough bread", "quantity": "2 slices" },
+            { "name": "Ripe tomato", "quantity": "1 unit" },
+            { "name": "Extra virgin olive oil", "quantity": "1 tbsp" },
+            { "name": "Salt", "quantity": "to taste" }
+          ]
+        },
+        "lunch": {
+          "name": "Stewed lentils with vegetables",
+          "ingredients": [
+            { "name": "Green lentils", "quantity": "200 g" },
+            { "name": "Carrot", "quantity": "1 unit" },
+            { "name": "Potato", "quantity": "1 unit" },
+            { "name": "Onion", "quantity": "½ unit" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Paprika", "quantity": "1 tsp" },
+            { "name": "Olive oil", "quantity": "2 tbsp" }
+          ]
+        },
+        "dinner": {
+          "name": "French omelette with salad",
+          "ingredients": [
+            { "name": "Eggs", "quantity": "3 units" },
+            { "name": "Butter", "quantity": "1 tsp" },
+            { "name": "Mixed salad leaves", "quantity": "60 g" },
+            { "name": "Cherry tomatoes", "quantity": "6 units" },
+            { "name": "Olive oil", "quantity": "1 tbsp" },
+            { "name": "Salt & pepper", "quantity": "to taste" }
+          ]
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "meals": {
+        "breakfast": {
+          "name": "Yogurt with oats and fruit",
+          "ingredients": [
+            { "name": "Natural yogurt", "quantity": "200 g" },
+            { "name": "Rolled oats", "quantity": "40 g" },
+            { "name": "Banana", "quantity": "1 unit" },
+            { "name": "Honey", "quantity": "1 tsp" }
+          ]
+        },
+        "lunch": {
+          "name": "Oven-baked chicken with potatoes",
+          "ingredients": [
+            { "name": "Chicken thighs", "quantity": "2 units" },
+            { "name": "Potatoes", "quantity": "300 g" },
+            { "name": "Garlic", "quantity": "3 cloves" },
+            { "name": "Rosemary", "quantity": "1 sprig" },
+            { "name": "Olive oil", "quantity": "3 tbsp" },
+            { "name": "Salt & pepper", "quantity": "to taste" }
+          ]
+        },
+        "dinner": {
+          "name": "Zucchini cream soup",
+          "ingredients": [
+            { "name": "Zucchini", "quantity": "2 units" },
+            { "name": "Onion", "quantity": "½ unit" },
+            { "name": "Vegetable broth", "quantity": "500 ml" },
+            { "name": "Cream cheese", "quantity": "2 tbsp" },
+            { "name": "Olive oil", "quantity": "1 tbsp" }
+          ]
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "meals": {
+        "breakfast": {
+          "name": "Toast with avocado",
+          "ingredients": [
+            { "name": "Wholegrain bread", "quantity": "2 slices" },
+            { "name": "Avocado", "quantity": "1 unit" },
+            { "name": "Lemon juice", "quantity": "1 tsp" },
+            { "name": "Chilli flakes", "quantity": "pinch" },
+            { "name": "Salt", "quantity": "to taste" }
+          ]
+        },
+        "lunch": {
+          "name": "Rice with sauteed vegetables",
+          "ingredients": [
+            { "name": "White rice", "quantity": "180 g" },
+            { "name": "Red pepper", "quantity": "1 unit" },
+            { "name": "Courgette", "quantity": "1 unit" },
+            { "name": "Mushrooms", "quantity": "100 g" },
+            { "name": "Soy sauce", "quantity": "2 tbsp" },
+            { "name": "Sesame oil", "quantity": "1 tsp" }
+          ]
+        },
+        "dinner": {
+          "name": "Grilled fish with salad",
+          "ingredients": [
+            { "name": "Sea bass fillet", "quantity": "200 g" },
+            { "name": "Mixed salad leaves", "quantity": "60 g" },
+            { "name": "Lemon", "quantity": "½ unit" },
+            { "name": "Olive oil", "quantity": "1 tbsp" },
+            { "name": "Salt & pepper", "quantity": "to taste" }
+          ]
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "meals": {
+        "breakfast": {
+          "name": "Coffee with milk and fruit",
+          "ingredients": [
+            { "name": "Espresso coffee", "quantity": "1 shot" },
+            { "name": "Whole milk", "quantity": "150 ml" },
+            { "name": "Seasonal fruit", "quantity": "1 piece" }
+          ]
+        },
+        "lunch": {
+          "name": "Chickpeas with spinach",
+          "ingredients": [
+            { "name": "Cooked chickpeas", "quantity": "400 g" },
+            { "name": "Fresh spinach", "quantity": "150 g" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Cumin", "quantity": "½ tsp" },
+            { "name": "Olive oil", "quantity": "2 tbsp" },
+            { "name": "Salt", "quantity": "to taste" }
+          ]
+        },
+        "dinner": {
+          "name": "Turkey and vegetable wrap",
+          "ingredients": [
+            { "name": "Flour tortilla", "quantity": "1 unit" },
+            { "name": "Sliced turkey breast", "quantity": "80 g" },
+            { "name": "Lettuce", "quantity": "2 leaves" },
+            { "name": "Tomato", "quantity": "½ unit" },
+            { "name": "Light cream cheese", "quantity": "1 tbsp" }
+          ]
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "meals": {
+        "breakfast": {
+          "name": "Homemade cake and coffee",
+          "ingredients": [
+            { "name": "Homemade yogurt cake", "quantity": "1 slice" },
+            { "name": "Espresso coffee", "quantity": "1 shot" },
+            { "name": "Milk", "quantity": "100 ml" }
+          ]
+        },
+        "lunch": {
+          "name": "Pasta with tomato and basil sauce",
+          "ingredients": [
+            { "name": "Spaghetti", "quantity": "180 g" },
+            { "name": "Crushed tomatoes", "quantity": "400 g" },
+            { "name": "Garlic", "quantity": "2 cloves" },
+            { "name": "Fresh basil", "quantity": "handful" },
+            { "name": "Olive oil", "quantity": "2 tbsp" },
+            { "name": "Parmesan", "quantity": "30 g" }
+          ]
+        },
+        "dinner": {
+          "name": "Homemade pizza",
+          "ingredients": [
+            { "name": "Pizza dough", "quantity": "250 g" },
+            { "name": "Tomato sauce", "quantity": "4 tbsp" },
+            { "name": "Mozzarella", "quantity": "125 g" },
+            { "name": "Oregano", "quantity": "1 tsp" },
+            { "name": "Olive oil", "quantity": "1 tbsp" }
+          ]
+        }
+      }
+    }
+  ]
+}
