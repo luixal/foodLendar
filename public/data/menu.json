@@ -5,12 +5,12 @@
       "day": "Monday",
       "meals": {
         "breakfast": {
-          "name": "Toast with tomato and olive oil",
+          "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Sourdough bread", "quantity": "2 slices" },
-            { "name": "Ripe tomato", "quantity": "1 unit" },
-            { "name": "Extra virgin olive oil", "quantity": "1 tbsp" },
-            { "name": "Salt", "quantity": "to taste" }
+            { "name": "Yogur de Soja", "quantity": "2 u." },
+            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
+            { "name": "Avena", "quantity": "25 gr." },
+            { "name": "Arándanos", "quantity": "100 gr." }
           ]
         },
         "lunch": {
@@ -42,12 +42,12 @@
       "day": "Tuesday",
       "meals": {
         "breakfast": {
-          "name": "Yogurt with oats and fruit",
+          "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Natural yogurt", "quantity": "200 g" },
-            { "name": "Rolled oats", "quantity": "40 g" },
-            { "name": "Banana", "quantity": "1 unit" },
-            { "name": "Honey", "quantity": "1 tsp" }
+            { "name": "Yogur de Soja", "quantity": "2 u." },
+            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
+            { "name": "Avena", "quantity": "25 gr." },
+            { "name": "Arándanos", "quantity": "100 gr." }
           ]
         },
         "lunch": {
@@ -77,13 +77,12 @@
       "day": "Wednesday",
       "meals": {
         "breakfast": {
-          "name": "Toast with avocado",
+          "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Wholegrain bread", "quantity": "2 slices" },
-            { "name": "Avocado", "quantity": "1 unit" },
-            { "name": "Lemon juice", "quantity": "1 tsp" },
-            { "name": "Chilli flakes", "quantity": "pinch" },
-            { "name": "Salt", "quantity": "to taste" }
+            { "name": "Yogur de Soja", "quantity": "2 u." },
+            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
+            { "name": "Avena", "quantity": "25 gr." },
+            { "name": "Arándanos", "quantity": "100 gr." }
           ]
         },
         "lunch": {
@@ -113,11 +112,12 @@
       "day": "Thursday",
       "meals": {
         "breakfast": {
-          "name": "Coffee with milk and fruit",
+          "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Espresso coffee", "quantity": "1 shot" },
-            { "name": "Whole milk", "quantity": "150 ml" },
-            { "name": "Seasonal fruit", "quantity": "1 piece" }
+            { "name": "Yogur de Soja", "quantity": "2 u." },
+            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
+            { "name": "Avena", "quantity": "25 gr." },
+            { "name": "Arándanos", "quantity": "100 gr." }
           ]
         },
         "lunch": {
@@ -147,11 +147,12 @@
       "day": "Friday",
       "meals": {
         "breakfast": {
-          "name": "Homemade cake and coffee",
+          "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Homemade yogurt cake", "quantity": "1 slice" },
-            { "name": "Espresso coffee", "quantity": "1 shot" },
-            { "name": "Milk", "quantity": "100 ml" }
+            { "name": "Yogur de Soja", "quantity": "2 u." },
+            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
+            { "name": "Avena", "quantity": "25 gr." },
+            { "name": "Arándanos", "quantity": "100 gr." }
           ]
         },
         "lunch": {
