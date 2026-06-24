@@ -145,7 +145,19 @@ function createDayCard(day, todayKey) {
     const rowInner = document.createElement('div')
     rowInner.className = 'meal-row-inner'
     rowInner.appendChild(tag)
-    rowInner.appendChild(value)
+
+    const rowBody = document.createElement('div')
+    rowBody.className = 'meal-row-body'
+
+    const imgEl = document.createElement('img')
+    imgEl.className = 'meal-thumb'
+    imgEl.src = `${import.meta.env.BASE_URL}images/meals/${normalize(day.day)}-${mealKey}.png`
+    imgEl.alt = mealName
+    imgEl.width = 52
+    imgEl.height = 52
+    rowBody.appendChild(imgEl)
+    rowBody.appendChild(value)
+    rowInner.appendChild(rowBody)
 
     row.appendChild(rowInner)
     card.appendChild(row)

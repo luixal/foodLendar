@@ -29,8 +29,8 @@
     - card padding top + bottom: 48px
     Total ≈ 384px → round up to 390px for comfort
   */
-  --card-height: 390px;
-  --card-height-today: 430px;
+  --card-height: 430px;
+  --card-height-today: 480px;
 }
 
 * { box-sizing: border-box; }
@@ -45,7 +45,7 @@ body {
 }
 
 #app {
-  max-width: 1320px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 2.75rem 1.5rem 4rem;
 }
@@ -217,7 +217,7 @@ body {
   line-height: 1.45;
   color: var(--ink-strong);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -340,6 +340,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.meal-row-body {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.meal-thumb {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: var(--accent-soft);
 }
 
 .meal-row.is-clickable {
