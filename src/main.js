@@ -176,7 +176,63 @@ function scrollToToday() {
     })
   }
 }
+const CAROUSEL_SWIPE_THRESHOLD = 40
 
+function getClosestCarouselCard() {
+  const cards = Array.from(gridEl.querySelectorAll('.day-card'))
+  if (!cards.length) return null
+
+  const centerX = gridEl.scrollLeft + gridEl.clientWidth / 2
+  let closest = cards[0]
+  let closestDistance = Infinity
+
+  for (const card of cards) {
+    const cardCenter = card.offsetLeft + card.offsetWidth / 2
+    const distance = Math.abs(cardCenter - centerX)
+    if (distance < closestDistance) {
+      closestDistance = distance
+      closest = card
+    }
+  }
+
+  return closest
+}
+
+function scrollCarouselByCard(direction) {
+  const cards = Array.from(gridEl.querySelectorAll('.day-card'))
+  if (!cards.length) return
+
+  const currentCard = getClosestCarouselCard()
+  if (!currentCard) return
+
+  const currentIndex = cards.indexOf(currentCard)
+  const nextIndex = Math.max(0, Math.min(cards.length - 1, currentIndex + direction))
+  const targetCard = cards[nextIndex]
+  if (targetCard) {
+    targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+  }
+}
+
+let carouselTouchStartX = 0
+
+gridEl.addEventListener('touchstart', (event) => {
+  if (event.touches.length !== 1) return
+  carouselTouchStartX = event.touches[0].clientX
+})
+
+gridEl.addEventListener('touchend', (event) => {
+  const touch = event.changedTouches[0]
+  if (!touch) return
+
+  const deltaX = carouselTouchStartX - touch.clientX
+  if (Math.abs(deltaX) < CAROUSEL_SWIPE_THRESHOLD) {
+    scrollCarouselByCard(0)
+    return
+  }
+
+  const direction = deltaX > 0 ? 1 : -1
+  scrollCarouselByCard(direction)
+})
 // ── State renderer ────────────────────────────────────────────────────────────
 
 function renderState(message, isError = false) {
