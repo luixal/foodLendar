@@ -29,7 +29,7 @@
     - card padding top + bottom: 48px
     Total ≈ 384px → round up to 390px for comfort
   */
-  --card-height: 430px;
+  --card-height: 445px;
   --card-height-today: 480px;
 }
 

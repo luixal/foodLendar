@@ -1,5 +1,5 @@
 {
-  "week": "Week of June 22–26, 2026",
+  "week": "Comidas semanales para mantenerte bien :)",
   "days": [
     {
       "day": "Monday",
@@ -14,26 +14,22 @@
           ]
         },
         "lunch": {
-          "name": "Stewed lentils with vegetables",
+          "name": "Pollo con arroz y brócoli",
           "ingredients": [
-            { "name": "Green lentils", "quantity": "200 g" },
-            { "name": "Carrot", "quantity": "1 unit" },
-            { "name": "Potato", "quantity": "1 unit" },
-            { "name": "Onion", "quantity": "½ unit" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Paprika", "quantity": "1 tsp" },
-            { "name": "Olive oil", "quantity": "2 tbsp" }
+            { "name": "Contramuslo de pollo", "quantity": "250 g" },
+            { "name": "Arroz Microondas", "quantity": "1 u." },
+            { "name": "Brócoli", "quantity": "~5 floretes" },
+            { "name": "Tomate Frito/triturado", "quantity": "opcional" }
           ]
         },
         "dinner": {
-          "name": "French omelette with salad",
+          "name": "Ensalada de garbanzos con atún y tomate",
           "ingredients": [
-            { "name": "Eggs", "quantity": "3 units" },
-            { "name": "Butter", "quantity": "1 tsp" },
-            { "name": "Mixed salad leaves", "quantity": "60 g" },
-            { "name": "Cherry tomatoes", "quantity": "6 units" },
-            { "name": "Olive oil", "quantity": "1 tbsp" },
-            { "name": "Salt & pepper", "quantity": "to taste" }
+            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
+            { "name": "Atún", "quantity": "1/2 bote" },
+            { "name": "Tomate", "quantity": "1 u." },
+            { "name": "AOVE", "quantity": "" },
+            { "name": "Sal y pimienta", "quantity": "" }
           ]
         }
       }
@@ -51,24 +47,19 @@
           ]
         },
         "lunch": {
-          "name": "Oven-baked chicken with potatoes",
+          "name": "Carne picada con pisto y patata",
           "ingredients": [
-            { "name": "Chicken thighs", "quantity": "2 units" },
-            { "name": "Potatoes", "quantity": "300 g" },
-            { "name": "Garlic", "quantity": "3 cloves" },
-            { "name": "Rosemary", "quantity": "1 sprig" },
-            { "name": "Olive oil", "quantity": "3 tbsp" },
-            { "name": "Salt & pepper", "quantity": "to taste" }
+            { "name": "Carne Picada", "quantity": "250-300 gr." },
+            { "name": "Pisto", "quantity": "1 u." },
+            { "name": "Patata cocida", "quantity": "350 gr." },
+            { "name": "Cebolla", "quantity": "1 u." }
           ]
         },
         "dinner": {
-          "name": "Zucchini cream soup",
+          "name": "Salmón con arroz",
           "ingredients": [
-            { "name": "Zucchini", "quantity": "2 units" },
-            { "name": "Onion", "quantity": "½ unit" },
-            { "name": "Vegetable broth", "quantity": "500 ml" },
-            { "name": "Cream cheese", "quantity": "2 tbsp" },
-            { "name": "Olive oil", "quantity": "1 tbsp" }
+            { "name": "Salmón", "quantity": "250 gr." },
+            { "name": "Arroz microondas", "quantity": "1 u." }
           ]
         }
       }
@@ -86,24 +77,22 @@
           ]
         },
         "lunch": {
-          "name": "Rice with sauteed vegetables",
+          "name": "Pollo con pasta y brócoli",
           "ingredients": [
-            { "name": "White rice", "quantity": "180 g" },
-            { "name": "Red pepper", "quantity": "1 unit" },
-            { "name": "Courgette", "quantity": "1 unit" },
-            { "name": "Mushrooms", "quantity": "100 g" },
-            { "name": "Soy sauce", "quantity": "2 tbsp" },
-            { "name": "Sesame oil", "quantity": "1 tsp" }
+            { "name": "Contramuslo de pollo", "quantity": "250 gr." },
+            { "name": "Pasta", "quantity": "150 gr." },
+            { "name": "Brócoli", "quantity": "~5 floretes" }
           ]
         },
         "dinner": {
-          "name": "Grilled fish with salad",
+          "name": "Ensalada de garbanzos con huevo cocido, sardinas y tomate",
           "ingredients": [
-            { "name": "Sea bass fillet", "quantity": "200 g" },
-            { "name": "Mixed salad leaves", "quantity": "60 g" },
-            { "name": "Lemon", "quantity": "½ unit" },
-            { "name": "Olive oil", "quantity": "1 tbsp" },
-            { "name": "Salt & pepper", "quantity": "to taste" }
+            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
+            { "name": "Huevo cocido", "quantity": "1 u." },
+            { "name": "Sardinas", "quantity": "1 u." },
+            { "name": "Tomate", "quantity": "1 u." },
+            { "name": "AOVE", "quantity": "" },
+            { "name": "Sal y pimienta", "quantity": "" }
           ]
         }
       }
@@ -121,24 +110,22 @@
           ]
         },
         "lunch": {
-          "name": "Chickpeas with spinach",
+          "name": "Carne picada con batata y queso cottage",
           "ingredients": [
-            { "name": "Cooked chickpeas", "quantity": "400 g" },
-            { "name": "Fresh spinach", "quantity": "150 g" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Cumin", "quantity": "½ tsp" },
-            { "name": "Olive oil", "quantity": "2 tbsp" },
-            { "name": "Salt", "quantity": "to taste" }
+            { "name": "Carne Picada", "quantity": "250 gr." },
+            { "name": "Batata", "quantity": "1 u." },
+            { "name": "Queso Cottage", "quantity": "1 u." },
+            { "name": "Tomate Frito/triturado", "quantity": "" }
           ]
         },
         "dinner": {
-          "name": "Turkey and vegetable wrap",
+          "name": "Ensalada de salmón con queso fresco y tomate",
           "ingredients": [
-            { "name": "Flour tortilla", "quantity": "1 unit" },
-            { "name": "Sliced turkey breast", "quantity": "80 g" },
-            { "name": "Lettuce", "quantity": "2 leaves" },
-            { "name": "Tomato", "quantity": "½ unit" },
-            { "name": "Light cream cheese", "quantity": "1 tbsp" }
+            { "name": "Salmón crudo o ahumado", "quantity": "200 gr." },
+            { "name": "Queso Fresco", "quantity": "1 u." },
+            { "name": "Tomate", "quantity": "1 u." },
+            { "name": "AOVE", "quantity": "" },
+            { "name": "Sal y pimienta", "quantity": "" }
           ]
         }
       }
@@ -156,24 +143,21 @@
           ]
         },
         "lunch": {
-          "name": "Pasta with tomato and basil sauce",
+          "name": "Pollo con batata y arroz",
           "ingredients": [
-            { "name": "Spaghetti", "quantity": "180 g" },
-            { "name": "Crushed tomatoes", "quantity": "400 g" },
-            { "name": "Garlic", "quantity": "2 cloves" },
-            { "name": "Fresh basil", "quantity": "handful" },
-            { "name": "Olive oil", "quantity": "2 tbsp" },
-            { "name": "Parmesan", "quantity": "30 g" }
+            { "name": "Contramuslo de pollo", "quantity": "250 gr." },
+            { "name": "Batata", "quantity": "1 u." },
+            { "name": "Arroz microondas", "quantity": "1 u." }
           ]
         },
         "dinner": {
-          "name": "Homemade pizza",
+          "name": "Ensalada de garbanzos con atún y tomate",
           "ingredients": [
-            { "name": "Pizza dough", "quantity": "250 g" },
-            { "name": "Tomato sauce", "quantity": "4 tbsp" },
-            { "name": "Mozzarella", "quantity": "125 g" },
-            { "name": "Oregano", "quantity": "1 tsp" },
-            { "name": "Olive oil", "quantity": "1 tbsp" }
+            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
+            { "name": "Atún", "quantity": "1/2 bote" },
+            { "name": "Tomate", "quantity": "1 u." },
+            { "name": "AOVE", "quantity": "" },
+            { "name": "Sal y pimienta", "quantity": "" }
           ]
         }
       }
