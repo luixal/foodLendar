@@ -185,7 +185,7 @@ body {
   color: var(--accent-dark);
   border-radius: var(--radius-pill);
   padding: 0.2rem 0.65rem 0.2rem 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5  rem;
   flex-shrink: 0;
 }
 
@@ -429,7 +429,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-dark);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
 }
 
 .modal-title {
