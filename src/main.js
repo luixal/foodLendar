@@ -8,7 +8,7 @@ const DAYS_OF_WEEK = [
 ]
 
 const MEAL_META = {
-  breakfast: { label: 'Breakfast', icon: '🌅' },
+  breakfast: { label: 'Breakfast', icon: '☀️' },
   lunch:     { label: 'Lunch',     icon: '🍲' },
   dinner:    { label: 'Dinner',    icon: '🌙' }
 }
