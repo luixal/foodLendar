@@ -7,30 +7,72 @@
         "breakfast": {
           "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Yogur de Soja", "quantity": "2 u." },
-            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
-            { "name": "Avena", "quantity": "25 gr." },
-            { "name": "Arándanos", "quantity": "100 gr." }
-          ]
+            {
+              "name": "Yogur de Soja",
+              "quantity": "2 u."
+            },
+            {
+              "name": "Crema de cacahuete",
+              "quantity": "1 cucharada"
+            },
+            {
+              "name": "Avena",
+              "quantity": "25 gr."
+            },
+            {
+              "name": "Arándanos",
+              "quantity": "100 gr."
+            }
+          ],
+          "icon": "yogurt"
         },
         "lunch": {
           "name": "Pollo con arroz y brócoli",
           "ingredients": [
-            { "name": "Contramuslo de pollo", "quantity": "250 g" },
-            { "name": "Arroz Microondas", "quantity": "1 u." },
-            { "name": "Brócoli", "quantity": "~5 floretes" },
-            { "name": "Tomate Frito/triturado", "quantity": "opcional" }
-          ]
+            {
+              "name": "Contramuslo de pollo",
+              "quantity": "250 g"
+            },
+            {
+              "name": "Arroz Microondas",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Brócoli",
+              "quantity": "~5 floretes"
+            },
+            {
+              "name": "Tomate Frito/triturado",
+              "quantity": "opcional"
+            }
+          ],
+          "icon": "chicken"
         },
         "dinner": {
-          "name": "Ensalada de garbanzos con atún y tomate",
+          "name": "Ensalada de garbanzos con atún, tomate, cebolleta y huevo cocido",
           "ingredients": [
-            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
-            { "name": "Atún", "quantity": "1/2 bote" },
-            { "name": "Tomate", "quantity": "1 u." },
-            { "name": "AOVE", "quantity": "" },
-            { "name": "Sal y pimienta", "quantity": "" }
-          ]
+            {
+              "name": "Grabanzos cocidos",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Atún",
+              "quantity": "1/2 bote"
+            },
+            {
+              "name": "Tomate",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Cebolleta",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Huevo cocido",
+              "quantity": "1 u."
+            }
+          ],
+          "icon": "salad"
         }
       }
     },
@@ -40,27 +82,64 @@
         "breakfast": {
           "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Yogur de Soja", "quantity": "2 u." },
-            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
-            { "name": "Avena", "quantity": "25 gr." },
-            { "name": "Arándanos", "quantity": "100 gr." }
-          ]
+            {
+              "name": "Yogur de Soja",
+              "quantity": "2 u."
+            },
+            {
+              "name": "Crema de cacahuete",
+              "quantity": "1 cucharada"
+            },
+            {
+              "name": "Avena",
+              "quantity": "25 gr."
+            },
+            {
+              "name": "Arándanos",
+              "quantity": "100 gr."
+            }
+          ],
+          "icon": "yogurt"
         },
         "lunch": {
           "name": "Carne picada con pisto y patata",
           "ingredients": [
-            { "name": "Carne Picada", "quantity": "250-300 gr." },
-            { "name": "Pisto", "quantity": "1 u." },
-            { "name": "Patata cocida", "quantity": "350 gr." },
-            { "name": "Cebolla", "quantity": "1 u." }
-          ]
+            {
+              "name": "Carne Picada",
+              "quantity": "250-300 gr."
+            },
+            {
+              "name": "Pisto",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Patata cocida",
+              "quantity": "350 gr."
+            },
+            {
+              "name": "Cebolla",
+              "quantity": "1 u."
+            }
+          ],
+          "icon": "beef"
         },
         "dinner": {
-          "name": "Salmón con arroz",
+          "name": "Salmón con arroz y aguacate",
           "ingredients": [
-            { "name": "Salmón", "quantity": "250 gr." },
-            { "name": "Arroz microondas", "quantity": "1 u." }
-          ]
+            {
+              "name": "Salmón",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Arroz microondas",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Aguacate",
+              "quantity": "1 u."
+            }
+          ],
+          "icon": "salmon"
         }
       }
     },
@@ -70,30 +149,64 @@
         "breakfast": {
           "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Yogur de Soja", "quantity": "2 u." },
-            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
-            { "name": "Avena", "quantity": "25 gr." },
-            { "name": "Arándanos", "quantity": "100 gr." }
-          ]
+            {
+              "name": "Yogur de Soja",
+              "quantity": "2 u."
+            },
+            {
+              "name": "Crema de cacahuete",
+              "quantity": "1 cucharada"
+            },
+            {
+              "name": "Avena",
+              "quantity": "25 gr."
+            },
+            {
+              "name": "Arándanos",
+              "quantity": "100 gr."
+            }
+          ],
+          "icon": "yogurt"
         },
         "lunch": {
           "name": "Pollo con pasta y brócoli",
           "ingredients": [
-            { "name": "Contramuslo de pollo", "quantity": "250 gr." },
-            { "name": "Pasta", "quantity": "150 gr." },
-            { "name": "Brócoli", "quantity": "~5 floretes" }
-          ]
+            {
+              "name": "Contramuslo de pollo",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Pasta",
+              "quantity": "150 gr."
+            },
+            {
+              "name": "Brócoli",
+              "quantity": "~5 floretes"
+            }
+          ],
+          "icon": "chicken"
         },
         "dinner": {
           "name": "Ensalada de garbanzos con huevo cocido, sardinas y tomate",
           "ingredients": [
-            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
-            { "name": "Huevo cocido", "quantity": "1 u." },
-            { "name": "Sardinas", "quantity": "1 u." },
-            { "name": "Tomate", "quantity": "1 u." },
-            { "name": "AOVE", "quantity": "" },
-            { "name": "Sal y pimienta", "quantity": "" }
-          ]
+            {
+              "name": "Grabanzos cocidos",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Huevo cocido",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Sardinas",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Tomate",
+              "quantity": "1 u."
+            }
+          ],
+          "icon": "salad"
         }
       }
     },
@@ -103,30 +216,64 @@
         "breakfast": {
           "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Yogur de Soja", "quantity": "2 u." },
-            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
-            { "name": "Avena", "quantity": "25 gr." },
-            { "name": "Arándanos", "quantity": "100 gr." }
-          ]
+            {
+              "name": "Yogur de Soja",
+              "quantity": "2 u."
+            },
+            {
+              "name": "Crema de cacahuete",
+              "quantity": "1 cucharada"
+            },
+            {
+              "name": "Avena",
+              "quantity": "25 gr."
+            },
+            {
+              "name": "Arándanos",
+              "quantity": "100 gr."
+            }
+          ],
+          "icon": "yogurt"
         },
         "lunch": {
           "name": "Carne picada con batata y queso cottage",
           "ingredients": [
-            { "name": "Carne Picada", "quantity": "250 gr." },
-            { "name": "Batata", "quantity": "1 u." },
-            { "name": "Queso Cottage", "quantity": "1 u." },
-            { "name": "Tomate Frito/triturado", "quantity": "" }
-          ]
+            {
+              "name": "Carne Picada",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Batata",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Queso Cottage",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Tomate Frito/triturado",
+              "quantity": ""
+            }
+          ],
+          "icon": "beef"
         },
         "dinner": {
-          "name": "Ensalada de salmón con queso fresco y tomate",
+          "name": "Salmón con pasta y queso cottage",
           "ingredients": [
-            { "name": "Salmón crudo o ahumado", "quantity": "200 gr." },
-            { "name": "Queso Fresco", "quantity": "1 u." },
-            { "name": "Tomate", "quantity": "1 u." },
-            { "name": "AOVE", "quantity": "" },
-            { "name": "Sal y pimienta", "quantity": "" }
-          ]
+            {
+              "name": "Salmón",
+              "quantity": "200 gr."
+            },
+            {
+              "name": "Queso Cottage",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Pasta",
+              "quantity": "150 gr."
+            }
+          ],
+          "icon": "salmon"
         }
       }
     },
@@ -136,29 +283,68 @@
         "breakfast": {
           "name": "Yogur con crema de cacahuete, avena y arándanos",
           "ingredients": [
-            { "name": "Yogur de Soja", "quantity": "2 u." },
-            { "name": "Crema de cacahuete", "quantity": "1 cucharada" },
-            { "name": "Avena", "quantity": "25 gr." },
-            { "name": "Arándanos", "quantity": "100 gr." }
-          ]
+            {
+              "name": "Yogur de Soja",
+              "quantity": "2 u."
+            },
+            {
+              "name": "Crema de cacahuete",
+              "quantity": "1 cucharada"
+            },
+            {
+              "name": "Avena",
+              "quantity": "25 gr."
+            },
+            {
+              "name": "Arándanos",
+              "quantity": "100 gr."
+            }
+          ],
+          "icon": "yogurt"
         },
         "lunch": {
           "name": "Pollo con batata y arroz",
           "ingredients": [
-            { "name": "Contramuslo de pollo", "quantity": "250 gr." },
-            { "name": "Batata", "quantity": "1 u." },
-            { "name": "Arroz microondas", "quantity": "1 u." }
-          ]
+            {
+              "name": "Contramuslo de pollo",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Batata",
+              "quantity": "1 u."
+            },
+            {
+              "name": "Arroz microondas",
+              "quantity": "1 u."
+            }
+          ],
+          "icon": "chicken"
         },
         "dinner": {
           "name": "Ensalada de garbanzos con atún y tomate",
           "ingredients": [
-            { "name": "Grabanzos cocidos", "quantity": "250 gr." },
-            { "name": "Atún", "quantity": "1/2 bote" },
-            { "name": "Tomate", "quantity": "1 u." },
-            { "name": "AOVE", "quantity": "" },
-            { "name": "Sal y pimienta", "quantity": "" }
-          ]
+            {
+              "name": "Grabanzos cocidos",
+              "quantity": "250 gr."
+            },
+            {
+              "name": "Atún",
+              "quantity": "1/2 bote"
+            },
+            {
+              "name": "Tomate",
+              "quantity": "1 u."
+            },
+            {
+              "name": "AOVE",
+              "quantity": ""
+            },
+            {
+              "name": "Sal y pimienta",
+              "quantity": ""
+            }
+          ],
+          "icon": "salad"
         }
       }
     }

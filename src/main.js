@@ -68,7 +68,29 @@ document.addEventListener('keydown', (e) => {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function normalize(text) {
-  return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  return text.normalize('NFD').replace(/[-]/g, '').toLowerCase()
+}
+
+const MEAL_ICON_MAP = {
+  yogurt: { emoji: '🥣', color: '#FCE1C8' },
+  chicken: { emoji: '🐔', color: '#F8D7A3' },
+  salmon: { emoji: '🐟', color: '#e29c9c' },
+  beef: { emoji: '🥩', color: '#E1B6A0' },
+  salad: { emoji: '🥗', color: '#C9E6B2' },
+  default: { emoji: '🍽️', color: '#D7E5F4' }
+}
+
+function getMealThumbUrl(iconKey) {
+  const key = iconKey || 'default'
+  const { emoji, color } = MEAL_ICON_MAP[key] || MEAL_ICON_MAP.default
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="none"/>
+  <circle cx="60" cy="60" r="52" fill="${color}" stroke="rgba(255,255,255,0.95)" stroke-width="8"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="5" stroke-dasharray="8 8"/>
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-size="62" font-family="Segoe UI Emoji, Arial, sans-serif">${emoji}</text>
+</svg>`
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
 }
 
 function getTodayKey() {
@@ -151,7 +173,7 @@ function createDayCard(day, todayKey) {
 
     const imgEl = document.createElement('img')
     imgEl.className = 'meal-thumb'
-    imgEl.src = `${import.meta.env.BASE_URL}images/meals/${normalize(day.day)}-${mealKey}.png`
+    imgEl.src = getMealThumbUrl(meal.icon)
     imgEl.alt = mealName
     imgEl.width = 52
     imgEl.height = 52
