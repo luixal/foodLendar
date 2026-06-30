@@ -170,12 +170,11 @@ body {
 
 .meal-row {
   padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
   flex-shrink: 0;               /* rows don't compress, card clips instead */
 }
 
 .meal-row:first-of-type { padding-top: 0; }
-.meal-row:last-child { border-bottom: none; padding-bottom: 0; }
+.meal-row:last-child { border-bottom: none; }
 
 .meal-tag {
   display: inline-flex;
@@ -373,6 +372,7 @@ body {
 .meal-row.is-clickable:focus-visible {
   background: var(--accent-soft);
   outline: none;
+  border-radius: 0.4rem;
 }
 
 /* ============================================================
